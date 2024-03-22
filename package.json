@@ -1,0 +1,52 @@
+{
+    "name": "snazzy-shiro",
+    "displayName": "Snazzy Shiro",
+    "version": "1.0.0",
+    "homepage": "https://github.com/EfrenHerrera/snazzy-shiro",
+    "description": "A dark and pleasant color theme.",
+    "publisher": "EfrenHerrera",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "bugs": {
+        "url": "https://github.com/EfrenHerrera/snazzy-shiro/issues"
+    },
+    "scripts": {
+        "build": "node ./scripts/build.js",
+        "lint": "node ./scripts/lint.js",
+        "package": "vsce package -o ./bin/snazzy-shiro.vsix",
+        "vscode:prepublish": "npm run build",
+        "vsce-publish": "vsce publish",
+        "dev:watch": "watch 'npm run build' ./src"
+    },
+    "author": "Efren Herrera <efrenhhi@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EfrenHerrera/snazzy-shiro.git"
+    },
+    "dependencies": {
+        "js-yaml": "^4.1.0",
+        "prettier": "^2.4.1",
+        "tinycolor2": "^1.4.2",
+        "vsce": "^1.100.1"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "snazzy-shiro",
+        "dark",
+        "theme",
+        "color-theme",
+        "icon-theme"
+    ],
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#24283e",
+        "theme": "dark"
+    },
+    "devDependencies": {
+        "watch": "^1.0.2"
+    }
+}
